@@ -1,5 +1,24 @@
+@import url(./reset.css);
+
+:root {
+  font-family: "Manrope", sans-serif;
+
+  --green-light: hsl(193, 38%, 86%);
+  --green: hsl(150, 100%, 66%);
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+
 body {
-  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  background-color: var(--Dark-Blue);
+  color: var(--green-light);
+  font-weight: 800;
 }
 
 .attribution {
@@ -8,4 +27,51 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.card {
+  width: calc(100% - 2rem);
+  max-width: 30rem;
+  /* width: min(30rem, calc(100% - 2rem)); */
+  background-color: var(--Dark-Grayish-Blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 15px;
+  padding: 2rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  position: relative;
+}
+
+.number {
+  color: var(--green);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
+
+.text {
+  font-size: 1.1rem;
+}
+
+.text::before,
+.text::after {
+  content: '"';
+}
+
+.btn {
+  border-radius: 50%;
+  aspect-ratio: 1;
+  padding: 0.8rem;
+  background-color: var(--green);
+  position: absolute;
+  bottom: 0;
+  transform: translate(0, 50%);
+}
+
+.btn img {
+  width: 1rem;
 }

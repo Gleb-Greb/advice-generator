@@ -14,19 +14,39 @@
 
     <title>Frontend Mentor | Advice generator app</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./style.css" />
     <script type="module" src="./script.js"></script>
   </head>
   <body>
-    Advice #<!-- Advice ID goes here -->
+    <main class="card">
+      <h4 class="number">Advice #117</h4>
+      <p class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+        nisi quae perspiciatis blanditiis, architecto earum omnis alias eius
+        illo, non qui nihil a iusto laudantium?
+      </p>
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="./images/pattern-divider-desktop.svg"
+        />
+        <img src="./images/pattern-divider-mobile.svg" alt="" />
+      </picture>
+      <button class="btn"><img src="./images/icon-dice.svg" alt="" /></button>
+    </main>
 
-    "<!-- Advice text goes here -->"
-
-    <div class="attribution">
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    </footer>
   </body>
 </html>
